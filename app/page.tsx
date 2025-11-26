@@ -2,9 +2,10 @@ import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { VideoSection } from "@/components/video-section"
 import { ConversationSection } from "@/components/conversation-section"
+import { ImageDivider } from "@/components/image-divider"
 import { ImportantInfoSection } from "@/components/important-info-section"
 import { AboutSection } from "@/components/about-section"
-import { ContactForm } from "@/components/contact-form"
+import { BokaSection } from "@/components/boka-section"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -14,9 +15,10 @@ export default function Home() {
       <HeroSection />
       <VideoSection />
       <ConversationSection />
+      <ImageDivider />
       <ImportantInfoSection />
       <AboutSection />
-      <ContactForm />
+      <BokaSection />
       <Footer />
     </main>
   )
