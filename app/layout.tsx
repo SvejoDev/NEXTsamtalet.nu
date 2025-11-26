@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import Script from "next/script"
 import "./globals.css"
 import ClientLayout from "./ClientLayout"
 import { GeistSans } from "geist/font/sans"
@@ -49,6 +50,37 @@ export default function RootLayout({
     <html lang="sv">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable}`}>
         <ClientLayout>{children}</ClientLayout>
+        <Script id="svejo-booking-config" strategy="afterInteractive">
+          {`
+            var APP_ID = "jx7b081n47vfk0e8w00dwtvskd7vz3q9";
+            var WIDGET_ID = "samtaletnu";
+            if (typeof window.svejoBookingSettings === "undefined") {
+              window.svejoBookingSettings = [];
+            }
+            window.svejoBookingSettings.push({
+              base_url: "https://boka.svejo.se/",
+              app_id: APP_ID,
+              widget_id: WIDGET_ID,
+              floating: true,
+              btn_text: {"sv": "Boka nu", "en": "Book now"},
+              btn_style: { "size": "large", "bg": "#0b0911", "color": "#ffffff" }
+            });
+          `}
+        </Script>
+        <Script id="svejo-booking-loader" strategy="afterInteractive">
+          {`
+            (function() {
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.async = true;
+              script.src = "https://boka.svejo.se/widget.js";
+              if (!document.querySelector('[src="' + script.src + '"]')) {
+                var firstScript = document.getElementsByTagName("script")[0];
+                firstScript.parentNode?.insertBefore(script, firstScript);
+              }
+            })();
+          `}
+        </Script>
       </body>
     </html>
   )
