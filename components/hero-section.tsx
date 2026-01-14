@@ -1,6 +1,3 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 export function HeroSection() {
@@ -17,13 +14,6 @@ export function HeroSection() {
               behöver sättas ord på? SAMTALET.NU erbjuder digitala individuella kurativa, reflekterande, stödjande
               samtal där även lyssnandet från mig som samtalspartner har en viktig funktion.
             </p>
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-              onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              Boka Ditt Samtal Här
-            </Button>
           </div>
           <div className="relative order-first md:order-last ">
             <Image

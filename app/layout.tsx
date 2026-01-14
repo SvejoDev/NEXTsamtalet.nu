@@ -21,21 +21,30 @@ export const metadata: Metadata = {
     'samtala', 'digitala samtal', 'terapeut göteborg', 'samtalsterapi göteborg',
     'reflekterande samtal', 'stödjande samtal', 'samtalspartner', 'reflektion',
     'psykoterapi göteborg', 'kurator göteborg', 'socionom terapeut',
-    
-    // Secondary keywords  
+
+    // Service keywords (Kärnsökord)
+    'samtalsstöd online', 'samtalsterapeut online', 'prata med någon professionell',
+    'professionellt samtalsstöd', 'privat samtalsstöd',
+
+    // Secondary keywords
     'individuell terapi', 'kurativa samtal', 'online terapi', 'digitalt stöd',
     'psykodynamisk terapi', 'personlig utveckling', 'psykisk hälsa',
     'terapeutiska samtal', 'lyssnande', 'välmående',
-    
+
     // Long-tail keywords
     'boka samtal med terapeut göteborg', 'professionell samtalspartner',
     'digitala terapisamtal online', 'stödjande samtal för reflektion',
     'privat terapeut västra götaland', 'individuella samtal online',
-    
-    // Problem-focused
+
+    // Problem-focused (Problembaserade)
     'ångest', 'depression', 'stress', 'oro', 'kris', 'sorg', 'utmattning',
     'bearbeta', 'förändring', 'insikt', 'förståelse', 'klarhet',
-    
+    'hjälp med stress', 'relationsproblem hjälp', 'någon att prata med vid sorg',
+    'sömnproblem och stress', 'utmattningssyndrom stöd', 'självkänsla samtal', 'livskris stöd',
+
+    // Intent keywords (Intentionsbaserade)
+    'boka samtalsterapeut', 'samtalsstöd hemifrån',
+
     // Location variations
     'terapeut västra götaland', 'samtalsstöd göteborg', 'kurator väster'
   ]
