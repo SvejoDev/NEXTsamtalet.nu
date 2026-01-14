@@ -7,7 +7,6 @@ const navItems = [
   { href: "#samtal", label: "Om Samtalet" },
   { href: "#viktigt", label: "Viktigt att Veta" },
   { href: "#om-mig", label: "Om Mig" },
-  { href: "#kontakt", label: "Kontakt" },
 ]
 
 export function Header() {
